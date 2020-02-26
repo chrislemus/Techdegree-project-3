@@ -1,0 +1,106 @@
+/* =====================================
+ Base Element Styles
+===================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sands', Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: rgb(43, 43, 43);
+    background-color: rgb(248, 248, 248);
+}
+
+header {
+    color: white;
+    background: rgb(13, 21, 31);
+    text-align: center;
+    margin: -16px 0 -16px;
+}
+
+header p {
+    padding: 1em 0 1em;
+    font-size: large;
+}
+
+h1,
+p {
+    text-align: center;
+}
+
+fieldset {
+    /* border: none; */
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+
+
+/* =====================================
+ Base Layout Styles
+===================================== */
+
+/* ---- Layout Containers ---- */
+
+.news-form {
+    padding-top: 2em;
+}
+
+.news-form p {
+    color: rgb(172, 172, 172);
+    margin-top: 0px;
+    margin-bottom: 2px;
+    padding-bottom: 2em;
+    border-bottom: solid 6px rgb(12, 12, 12);
+}
+
+.news-form h1 {
+    margin-bottom: -4px;
+}
+
+
+
+/* ---- Page Elements ---- */
+
+.form-divider {
+    border-top: solid 4px rgb(12, 12, 12);
+    padding: 2.5em 0 2.5em;
+}
+
+/* ---- Pseudo Elements ---- */
+
+
+
+/* =====================================
+ Media Queries
+===================================== */
+
+
+/* ---- 768px and larger(tablet/desktop)---- */
+
+@media(min-width:768px) {
+    
+    .news-form {
+        width: 60%;
+        margin: 0 auto;
+    }
+}
+
+/* ---- 767px max MOBILE---- */
+@media(max-width:768px) {
+.news-form {
+    padding-left: 1em;
+    padding-right: 1em;
+}
+}
+
+/* ---- Float clearfix ---- */
+
+.clearfix::after {
+    content: " ";
+    display: table;
+    clear: both;
+}
