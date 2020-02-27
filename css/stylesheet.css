@@ -17,7 +17,8 @@ header {
     color: white;
     background: rgb(13, 21, 31);
     text-align: center;
-    margin: -16px 0 -16px;
+    margin: -16px 0 -5px;
+
 }
 
 header p {
@@ -31,13 +32,28 @@ p {
 }
 
 fieldset {
-    /* border: none; */
-    width: 100%;
-    margin: 0 auto;
-    padding: 0;
+    border: none;
+    margin: 40px 0 ;
 }
 
+button {
+    border: none;
+    background: lightseagreen;
+    color: white;
+    width: 100%;
+    padding: 1em 0;
+    border-radius: 5px;
+}
 
+section {
+    background-color: white;
+}
+
+input:focus,
+textarea:focus {
+    box-shadow: 0 0 15px rgb(89, 164, 255);
+    background-color: rgb(255, 255, 255);
+}
 
 /* =====================================
  Base Layout Styles
@@ -46,10 +62,12 @@ fieldset {
 /* ---- Layout Containers ---- */
 
 .news-form {
-    padding-top: 2em;
+    padding: 1em;
+    margin: 0 auto;
+    max-width:700px;
 }
 
-.news-form p {
+.sub-head {
     color: rgb(172, 172, 172);
     margin-top: 0px;
     margin-bottom: 2px;
@@ -61,14 +79,47 @@ fieldset {
     margin-bottom: -4px;
 }
 
+.copyright-text {
+    padding: 1em 0 5em;
+    color: rgb(172, 172, 172);
+    font-style: italic;
+}
+
+.main-label, 
+.main-input {
+    display: block;
+    width: 100%;   
+}
+
+#zip {
+    width: 20%;
+}
+
+.main-input {
+    border: none;
+    background: rgb(236, 236, 236);
+    padding: 16px 10px;
+    border-radius: 5px;
+}
+
+.main-label {
+    padding: .5em 0 5px;
+}
+
+.form-sec-head{
+    font-weight: bold;
+    display: block;
+    font-size: 1.5em;
+}
 
 
 /* ---- Page Elements ---- */
 
 .form-divider {
-    border-top: solid 4px rgb(12, 12, 12);
-    padding: 2.5em 0 2.5em;
+    border-top: solid 2px rgb(12, 12, 12);
 }
+
+
 
 /* ---- Pseudo Elements ---- */
 
@@ -85,16 +136,23 @@ fieldset {
     
     .news-form {
         width: 60%;
-        margin: 0 auto;
     }
-}
 
-/* ---- 767px max MOBILE---- */
-@media(max-width:768px) {
-.news-form {
-    padding-left: 1em;
-    padding-right: 1em;
-}
+    .contact-info .main-label,
+    .contact-info .main-input {
+        display: inline-block;
+        float: left;
+        margin-bottom: 1em;
+    }
+
+    .contact-info .main-label {
+        width: 30%;
+    }
+
+    .contact-info .main-input {
+        width: 70%;
+    }
+
 }
 
 /* ---- Float clearfix ---- */
