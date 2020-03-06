@@ -7,7 +7,7 @@
 }
 
 body {
-    font-family: Spartan, 'Open Sands', Arial, Helvetica, sans-serif;
+    font-family: 'Spartan', 'Open Sands', Arial, Helvetica, sans-serif;
     line-height: 1.6;
     color: rgb(255, 255, 255);
     background-color: rgb(248, 248, 248);
@@ -121,6 +121,11 @@ section {
 
 /* ---- Pseudo Elements ---- */
 
+input,
+textarea {
+    transition: all .5s cubic-bezier(.4,-0.46,.6,1.3);
+}
+
 input:focus,
 textarea:focus {
     box-shadow: 0 0 25px rgb(139, 189, 255);
@@ -142,7 +147,6 @@ textarea:focus {
 
     .contact-info .main-label,
     .contact-info .main-input {
-        display: inline-block;
         float: left;
         margin-bottom: 1em;
     }

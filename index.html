@@ -20,13 +20,13 @@
             
             <div class="form-divider">
                 <fieldset class="contact-info">
-                    <legend><span class="form-sec-head">Contact Information</span></legend>
+                    <legend class="form-sec-head">Contact Information</legend>
 
-                    <label required class="main-label" for="user_name">Full Name</label>
-                    <input class='main-input' type="text" id="user_name" name="user_name" placeholder="required"><br>
+                    <label class="main-label" for="user_name">Full Name</label>
+                    <input required class='main-input' type="text" id="user_name" name="user_name" placeholder="required"><br>
 
-                    <label required class="main-label"  for="email">Email Address</label>
-                    <input class='main-input' type="email" id="email" name="email" placeholder="required"><br>
+                    <label class="main-label"  for="email">Email Address</label>
+                    <input required class='main-input' type="email" id="email" name="email" placeholder="required"><br>
 
                     <label class="main-label" for="phone">Phone Number</label>
                     <input class='main-input' type="tel" id="phone" name="phone" placeholder="(919)123-5678"><br>
@@ -53,32 +53,31 @@
 
             <div class="form-divider">
                 <fieldset class="newsletter">
-                    <legend><span class="form-sec-head">Newsletter</span></legend>
+                    <legend class="form-sec-head">Newsletter</legend>
 
-                    <!-- news checkbox -->
-                    <legend class="main-label"><span >Select the newsletter you would like to receive</span></legend>
+                        <!-- news checkbox -->
+                        <label class="main-label">Select the newsletter you would like to receive</label>
 
-                    <input type="checkbox" id="html_news" name="news_interest" value="html_news" class="">
-                    <label for="html_news">HTML News</label><br>
+                        <input type="checkbox" id="html_news" name="news_interest" value="html_news" class="">
+                        <label for="html_news">HTML News</label><br>
 
-                    <input type="checkbox" name="news_interest" id="css_news" value="css_news" >
-                    <label for="css_news">CSS News</label><br>
+                        <input type="checkbox" name="news_interest" id="css_news" value="css_news" >
+                        <label for="css_news">CSS News</label><br>
 
-                    <input type="checkbox" name="news_interest" id="javascript_news" value="javascript_news">
-                    <label for="javascript_news">Javascript News</label>
+                        <input type="checkbox" name="news_interest" id="javascript_news" value="javascript_news">
+                        <label for="javascript_news">Javascript News</label>
+                        <!-- newsletter format -->
+                        <label class="main-label">Newsletter format</label>
 
-                    <!-- newsletter format -->
-                    <legend class="main-label"><span >Newsletter format</span></legend>
+                        <input type="radio" name="news_format" id="html" value="html">
+                        <label for="html">HTML</label><br>
 
-                    <input type="radio" name="news_format" id="html" value="html">
-                    <label for="html">HTML</label><br>
+                        <input type="radio" name="news_format" id="plain_text" value="plain_text">
+                        <label for="plain_text">Plain text</label><br>
 
-                    <input type="radio" name="news_format" id="plain_text" value="plain_text">
-                    <label for="plain_text">Plain text</label><br>
-
-                    <label for="topic_interest" class="main-label">Other topics you'd like to hear about</label>
-                    <textarea class='main-input' name="topic_of_interest" id="topic_interest" rows="5" placeholder="I would also like to hear more about..."></textarea>
-                
+                        <label for="topic_interest" class="main-label">Other topics you'd like to hear about</label>
+                        <textarea class='main-input' name="topic_of_interest" id="topic_interest" rows="5" placeholder="I would also like to hear more about..."></textarea>
+                    
                 </fieldset>
 
                 <button type="submit">Sign Up</button>
